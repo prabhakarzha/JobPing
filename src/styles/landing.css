@@ -1,0 +1,148 @@
+/* General Reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Wrapper */
+.landing-wrapper {
+  height: 100vh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+.landing-wrapper::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+/* Common Section Styling */
+.section {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Section 1 - Hero */
+.section-hero {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+
+.title-glow {
+  font-size: 3.5rem;
+  font-weight: 900;
+  background: linear-gradient(90deg, #00ffd5, #00aaff, #00ffd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 5px rgba(0, 255, 213, 0.4);
+  animation: titleZoomIn 1.2s ease forwards;
+  opacity: 0;
+  transform: scale(0.95);
+}
+
+@keyframes titleZoomIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.marquee-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #ffcc00;
+}
+
+/* Section 2 - Problem */
+.section-problem {
+  background: linear-gradient(to right, #232526, #414345);
+  color: #fff;
+}
+
+.animated-heading {
+  font-size: 2rem;
+  color: #ff7171;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.animated-subtext {
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  margin-top: 0.5rem;
+}
+
+/* Section 3 - Promise + CTA */
+.section-promise {
+  background: linear-gradient(to right, #000000, #434343);
+  color: #ffffff;
+}
+
+.highlight-text {
+  font-size: 2rem;
+  color: #00ffcc;
+  text-shadow: 0 0 5px #00ffcc;
+}
+
+.promise-description {
+  max-width: 600px;
+  font-size: 1.1rem;
+  margin: 1rem auto;
+}
+
+.cta-button {
+  background-color: #00ffd0;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  margin: 20px auto 0;
+}
+
+.cta-button:hover {
+  background-color: #00c6a5;
+}
+
+/* Footer */
+.footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.landing-logo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 0 15px rgba(0, 255, 213, 0.6);
+    background: linear-gradient(135deg, #00ffe5, #007bff); /* glowing background */
+    padding: 8px;
+    margin-bottom: 20px;
+  }
+  
+

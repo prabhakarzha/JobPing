@@ -1,0 +1,296 @@
+/* ---------------------- */
+/* Main Form Container */
+/* ---------------------- */
+.job-application-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 40px auto;
+  font-family: "Arial", sans-serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-application-form h2 {
+  text-align: center;
+  color: #333;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+/* ---------------------- */
+/* Form Labels & Inputs */
+/* ---------------------- */
+.job-application-form .form-label {
+  font-weight: bold;
+  color: #555;
+}
+
+.job-application-form .form-control,
+.job-application-form .form-select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.job-application-form .form-control:focus,
+.job-application-form .form-select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ---------------------- */
+/* Submit Button */
+/* ---------------------- */
+.job-application-form .btn-primary {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.job-application-form .btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* ---------------------- */
+/* Form Row Spacing */
+/* ---------------------- */
+.job-application-form .row {
+  margin-bottom: 15px;
+}
+
+/* ---------------------- */
+/* Data Tables Container */
+/* ---------------------- */
+.submitted-data-table,
+.all-applications-table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 40px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Make tables scroll horizontally on smaller screens */
+.table-responsive {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* ---------------------- */
+/* Table Styling */
+/* ---------------------- */
+.submitted-data-table table,
+.all-applications-table table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* Prevent table from shrinking too much */
+}
+
+.submitted-data-table th,
+.submitted-data-table td,
+.all-applications-table th,
+.all-applications-table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+  vertical-align: middle;
+}
+
+.submitted-data-table th,
+.all-applications-table th {
+  background-color: #f1f1f1;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.submitted-data-table tr:nth-child(even),
+.all-applications-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.submitted-data-table td strong,
+.all-applications-table td strong {
+  font-size: 14px;
+  color: #333;
+}
+
+/* ---------------------- */
+/* CSV Download Button */
+/* ---------------------- */
+.all-applications-table .btn-success {
+  display: block;
+  margin: 0 auto 15px auto;
+  padding: 10px 20px;
+  font-size: 14px;
+}
+
+/* ---------------------- */
+/* Responsive Design */
+/* ---------------------- */
+@media (max-width: 768px) {
+  .job-application-form {
+    padding: 15px;
+  }
+
+  .job-application-form h2 {
+    font-size: 24px;
+  }
+
+  .job-application-form .btn-primary {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  .submitted-data-table table,
+  .all-applications-table table {
+    font-size: 14px;
+  }
+
+  .all-applications-table .btn-success {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .job-application-form {
+    width: 95%;
+    padding: 10px;
+  }
+
+  .job-application-form h2 {
+    font-size: 22px;
+  }
+
+  .job-application-form .btn-primary {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .submitted-data-table table td,
+  .submitted-data-table table th,
+  .all-applications-table table td,
+  .all-applications-table table th {
+    font-size: 12px;
+  }
+}
+/* src/styles/JobApplicationForm.css */
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.form h2 {
+  text-align: center;
+  color: #1976d2;
+  margin-bottom: 20px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 10px;
+}
+
+button:disabled {
+  background-color: #9bbcd4;
+  cursor: not-allowed;
+}
+
+.modal {
+  background-color: #e0f7fa;
+  padding: 40px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 50px auto;
+  max-width: 500px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+}
+
+.modal h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+.job-application-form {
+  background-color: #f8f9fa;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #ddd;
+}
+/* SubmitApplication.css */
+
+.btn-gradient:hover {
+  filter: brightness(1.1);
+  transform: scale(1.01);
+  transition: all 0.3s ease;
+}
+
+.card input:focus,
+.card select:focus {
+  border-color: #00bcd4;
+  box-shadow: 0 0 0 0.2rem rgba(0, 188, 212, 0.25);
+}
+
+.card {
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

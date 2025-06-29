@@ -1,0 +1,9 @@
+.success-page {
+  background: linear-gradient(120deg, #e0f7fa, #e3f2fd);
+  min-height: 100vh;
+  border-radius: 12px;
+}
+
+.testimonial-section {
+  padding-top: 2rem;
+}

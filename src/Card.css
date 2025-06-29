@@ -1,0 +1,35 @@
+.main {
+  display: flex;
+  margin: 10px;
+  gap: 20px;
+}
+.card1 {
+  background-color: green;
+
+  position: relative;
+  top: 0;
+  transition: top 0.3s ease-in-out;
+  left: 10px; /* Moves it right by 10px */
+}
+.card1:hover {
+  top: 55px; /* Moves up slightly */
+}
+.card2 {
+  background-color: red;
+  position: absolute;
+}
+.card2 card-body {
+  top: 10px;
+  right: 10px;
+  background-color: black;
+  color: rgb(85, 0, 128);
+  padding: 5px;
+  font-weight: bold;
+}
+
+/* .card3 {
+  background-color: yellow;
+  right: 10px;
+
+  position: fixed;
+} */

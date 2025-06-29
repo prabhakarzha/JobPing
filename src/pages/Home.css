@@ -1,0 +1,78 @@
+.home-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  flex-direction: column;
+}
+
+.logo-img {
+  width: 110px;
+  height: 110px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.login-box {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.google-btn {
+  background-color: #ffffff !important;
+  color: #000 !important;
+  padding: 10px 24px !important;
+  border-radius: 40px !important;
+  text-transform: none !important;
+  font-size: 1rem !important;
+  font-weight: 500 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: fit-content !important;
+  margin: 0 auto !important;
+}
+
+.admin-form input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+footer {
+  margin-top: 30px;
+  text-align: center;
+  color: #eee;
+  font-size: 0.85rem;
+}
+@media (max-width: 768px) {
+  .login-box {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .google-btn {
+    width: 100% !important;
+    max-width: 280px;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    padding: 10px 16px !important;
+  }
+  .google-btn .MuiButton-startIcon {
+    margin-right: 8px !important;
+  }
+}
