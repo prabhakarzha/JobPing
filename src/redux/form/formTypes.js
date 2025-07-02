@@ -1,0 +1,2 @@
+export const SET_FORM_DATA = "SET_FORM_DATA";
+export const DELETE_FORM_DATA = "DELETE_FORM_DATA";
